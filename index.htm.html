@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نموذج متطلبات تصميم الشعار والهوية التجارية | فخامة للتصميم والجرافيك</title>
+    
+    <!-- استيراد خط Tajawal العربي العصري من Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- تحميل Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- إعدادات Tailwind المخصصة لألوان شعار فخامة -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Tajawal', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            indigo: '#3B426E',
+                            indigoDark: '#2A3054',
+                            teal: '#5D8B86',
+                            tealLight: '#EBF3F2',
+                            slateBg: '#F6F8FA',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* تنسيقات إضافية ناعمة وتأثيرات بصرية متناسقة مع الشعار */
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #F4F6F9;
+            color: #1E293B;
+        }
+
+        .brand-gradient {
+            background: linear-gradient(135deg, #3B426E 0%, #4C677A 50%, #5D8B86 100%);
+        }
+
+        .brand-gradient-subtle {
+            background: linear-gradient(135deg, rgba(59, 66, 110, 0.06) 0%, rgba(93, 139, 134, 0.08) 100%);
+        }
+
+        .card-shadow {
+            box-shadow: 0 4px 20px -2px rgba(59, 66, 110, 0.06), 0 2px 6px -1px rgba(59, 66, 110, 0.04);
+        }
+
+        .input-focus:focus {
+            outline: none;
+            border-color: #5D8B86;
+            box-shadow: 0 0 0 4px rgba(93, 139, 134, 0.15);
+        }
+
+        /* تنسيقات خاصة بالطباعة وحفظ PDF بحيث يخرج بشكل نظيف واحترافي */
+        @media print {
+            body {
+                background-color: #FFFFFF !important;
+                padding: 0 !important;
+            }
+            .no-print {
+                display: none !important;
+            }
+            .print-container {
+                max-width: 100% !important;
+                box-shadow: none !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+            .question-card {
+                break-inside: avoid;
+                border: 1px solid #E2E8F0 !important;
+                box-shadow: none !important;
+                margin-bottom: 14px !important;
+                padding: 14px !important;
+            }
+            textarea, input[type="text"] {
+                border: none !important;
+                background-color: #F8FAFC !important;
+                resize: none !important;
+                padding: 8px 12px !important;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-brand-teal selection:text-white">
+
+    <!-- شريط علوي رفيع بتدرج ألوان الهوية -->
+    <div class="h-2 w-full brand-gradient no-print"></div>
+
+    <!-- الحاوية الرئيسية للصفحة -->
+    <main class="flex-grow max-w-3xl w-full mx-auto px-4 sm:px-6 py-6 sm:py-10 print-container">
+
+        <!-- بطاقة الهيدر والشعار -->
+        <header class="bg-white rounded-3xl card-shadow border border-slate-100 overflow-hidden mb-8">
+            <!-- عرض الشعار المرفق بشكل بارز وأنيق -->
+            <div class="w-full bg-[#F2F3F5] flex items-center justify-center border-b border-slate-100">
+                <img 
+                    src="GEM_PHOTO_0611F11B-FD38-4EE8-ABFE-2AD06E3EA0A6_L0_001_recent_photo_68F9EB88-D143-4795-8965-F8E95CF4F757.jpg" 
+                    alt="شعار فخامة للتصميم والجرافيك" 
+                    class="w-full max-h-56 sm:max-h-64 object-contain mx-auto"
+                    onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'py-10 px-6 text-center brand-gradient text-white w-full\'><h2 class=\'text-3xl font-extrabold tracking-wide\'>فخامة</h2><p class=\'text-sm opacity-90 mt-1\'>للتصميم والجرافيك</p></div>';"
+                >
+            </div>
+
+            <!-- الترحيب والتعريف بالنموذج -->
+            <div class="p-6 sm:p-8 text-center">
+                <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs sm:text-sm font-bold bg-brand-tealLight text-brand-indigo mb-3">
+                    <span class="w-2 h-2 rounded-full bg-brand-teal"></span>
+                    استبيان بناء الهوية البصرية
+                </span>
+                <h1 class="text-2xl sm:text-3xl font-extrabold text-brand-indigo leading-snug mb-3">
+                    نموذج متطلبات تصميم الشعار والهوية التجارية
+                </h1>
+                <p class="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
+                    حياك الله في <strong class="text-brand-indigo font-bold">فخامة للتصميم والجرافيك</strong>! 
+                    عشان نفهم فكرة مشروعك صح ونصمم لك هوية وشعار يليقون بطموحك، ياليت تجاوب باختصار ووضوح على هذي الأسئلة العشرة.
+                </p>
+
+                <!-- شريط تقدم الإجابات التفاعلي -->
+                <div class="mt-6 pt-5 border-t border-slate-100 no-print">
+                    <div class="flex items-center justify-between text-xs sm:text-sm font-bold text-slate-500 mb-2">
+                        <span>نسبة إكمال النموذج</span>
+                        <span id="progress-text" class="text-brand-indigo">0 من 10 أسئلة</span>
+                    </div>
+                    <div class="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden">
+                        <div id="progress-bar" class="brand-gradient h-2.5 rounded-full transition-all duration-300" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- نموذج الأسئلة العشرة -->
+        <form id="brief-form" class="space-y-5" onsubmit="return false;">
+
+            <!-- السؤال 1 -->
+            <section class="question-card bg-white rounded-2xl p-5 sm:p-6 card-shadow border border-slate-100 transition-all hover:border-brand-teal/40">
+                <div class="flex items-start gap-3.5 mb-3">
+                    <span class="flex-shrink-0 w-8 h-8 sm:w-9 sm:h-9 rounded-xl brand-gradient text-white font-bold flex items-center justify-center text-sm sm:text-base shadow-sm">1</span>
+                    <div>
+                        <label for="q1" class="block text-base sm:text-lg font-bold text-brand-indigo leading-snug">
+                            وش اسم مشروعك بالضبط؟
+                        </label>
+                        <p class="text-xs sm:text-sm text-slate-500 mt-0.5">وتبيه بالعربي أو بالإنجليزي أو الاثنين مع بعض؟ (وإذا فيه شعار لفظي/سلوقن اكتبه)</p>
+                    </div>
+                </div>
+                <textarea id="q1" rows="2" placeholder="اكتب اسم المشروع واللغة المفضلة هنا..." class="answer-input w-full rounded-xl border border-slate-200 bg-slate-50/70 p-3.5 text-slate-800 text-sm sm:text-base transition-all input-focus"></textarea>
+            </section>
+
+            <!-- السؤال 2 -->
+            <section class="question-card bg-white rounded-2xl p-5 sm:p-6 card-shadow border border-slate-100 transition-all hover:border-brand-teal/40">
+                <div class="flex items-start gap-3.5 mb-3">
+                    <span class="flex-shrink-0 w-8 h-8 sm:w-9 sm:h-9 rounded-xl brand-gradient text-white font-bold flex items-center justify-center text-sm sm:text-base shadow-sm">2</span>
+                    <div>
+                        <label for="q2" class="block text-base sm:text-lg font-bold text-brand-indigo leading-snug">
+                            وش يقدّم مشروعك باختصار؟
+                        </label>
+                        <p class="text-xs sm:text-sm text-slate-500 mt-0.5">منتجات، خدمات، متجر إلكتروني، كافيه، شركة تقنية...</p>
+                    </div>
+                </div>
+                <textarea id="q2" rows="3" placeholder="اشرح لنا نشاط مشروعك ومنتجاتك أو خدماتك بشكل مبسط..." class="answer-input w-full rounded-xl border border-slate-200 bg-slate-50/70 p-3.5 text-slate-800 text-sm sm:text-base transition-all input-focus"></textarea>
+            </section>
+
+            <!-- السؤال 3 -->
+            <section class="question-card bg-white rounded-2xl p-5 sm:p-6 card-shadow border border-slate-100 transition-all hover:border-brand-teal/40">
+                <div class="flex items-start gap-3.5 mb-3">
+                    <span class="flex-shrink-0 w-8 h-8 sm:w-9 sm:h-9 rounded-xl brand-gradient text-white font-bold flex items-center justify-center text-sm sm:text-base shadow-sm">3</span>
+                    <div>
+                        <label for="q3" class="block text-base sm:text-lg font-bold text-brand-indigo leading-snug">
+                            من هم زباينك المستهدفين؟
+                        </label>
+                        <p class="text-xs sm:text-sm text-slate-500 mt-0.5">أعمارهم، شباب أو بنات أو الكل، وهل مشروعك اقتصادي أو فخم؟</p>
+                    </div>
+                </div>
+                <textarea id="q3" rows="2" placeholder="مثلاً: شباب وبنات من 18 إلى 35 سنة، فئة متوسطة وعالية..." class="answer-input w-full rounded-xl border border-slate-200 bg-slate-50/70 p-3.5 text-slate-800 text-sm sm:text-base transition-all input-focus"></textarea>
+            </section>
+
+            <!-- السؤال 4 -->
+            <section class="question-card bg-white rounded-2xl p-5 sm:p-6 card-shadow border border-slate-100 transition-all hover:border-brand-teal/40">
+                <div class="flex items-start gap-3.5 mb-3">
+                    <span class="flex-shrink-0 w-8 h-8 sm:w-9 sm:h-9 rounded-xl brand-gradient text-white font-bold flex items-center justify-center text-sm sm:text-base shadow-sm">4</span>
+                    <div>
+                        <label for="q4" class="block text-base sm:text-lg font-bold text-brand-indigo leading-snug">
+                            وش الفكرة أو المعنى اللي ودك يطلع في الشعار؟
+                        </label>
+                        <p class="text-xs sm:text-sm text-slate-500 mt-0.5">أو إذا في بالك رمز أو رسمة معينة (وإذا ما في بالك فكرة محددة اكتب: أترك الإبداع لكم)</p>
+                    </div>
+                </div>
+                <textarea id="q4" rows="3" placeholder="اكتب الفكرة أو الرمز اللي في بالك هنا..." class="answer-input w-full rounded-xl border border-slate-200 bg-slate-50/70 p-3.5 text-slate-800 text-sm sm:text-base transition-all input-focus"></textarea>
+            </section>
+
+            <!-- السؤال 5 -->
+            <section class="question-card bg-white rounded-2xl p-5 sm:p-6 card-shadow border border-slate-100 transition-all hover:border-brand-teal/40">
+                <div class="flex items-start gap-3.5 mb-3">
+                    <span class="flex-shrink-0 w-8 h-8 sm:w-9 sm:h-9 rounded-xl brand-gradient text-white font-bold flex items-center justify-center text-sm sm:text-base shadow-sm">5</span>
+                    <div>
+                        <label for="q5" class="block text-base sm:text-lg font-bold text-brand-indigo leading-snug">
+                            وش أول إحساس تبي العميل يحس فيه لا شاف هويتك؟
+                        </label>
+                        <p class="text-xs sm:text-sm text-slate-500 mt-0.5">اختر من الخيارات السريعة أو اكتب الشعور اللي يناسب مشروعك:</p>
+                    </div>
+                </div>
+                <!-- أزرار مساعدة سريعة -->
+                <div class="flex flex-wrap gap-2 mb-3 no-print">
+                    <button type="button" onclick="appendTag('q5', 'فخامة ورقي')" class="text-xs sm:text-sm px-3 py-1.5 rounded-lg bg-brand-tealLight text-brand-indigo hover:bg-brand-teal hover:text-white transition font-medium">+ فخامة ورقي</button>
+                    <button type="button" onclick="appendTag('q5', 'بساطة وعصرية (مودرن)')" class="text-xs sm:text-sm px-3 py-1.5 rounded-lg bg-brand-tealLight text-brand-indigo hover:bg-brand-teal hover:text-white transition font-medium">+ بساطة وعصرية</button>
+                    <button type="button" onclick="appendTag('q5', 'ثقة ووضوح')" class="text-xs sm:text-sm px-3 py-1.5 rounded-lg bg-brand-tealLight text-brand-indigo hover:bg-brand-teal hover:text-white transition font-medium">+ ثقة ووضوح</button>
+                    <button type="button" onclick="appendTag('q5', 'حيوية وشبابية')" class="text-xs sm:text-sm px-3 py-1.5 rounded-lg bg-brand-tealLight text-brand-indigo hover:bg-brand-teal hover:text-white transition font-medium">+ حيوية وشبابية</button>
+                    <button type="button" onclick="appendTag('q5', 'دفء وقرب')" class="text-xs sm:text-sm px-3 py-1.5 rounded-lg bg-brand-tealLight text-brand-indigo hover:bg-brand-teal hover:text-white transition font-medium">+ دفء وقرب</button>
+                </div>
+                <textarea id="q5" rows="2" placeholder="اكتب الانطباع أو الإحساس المطلوب..." class="answer-input w-full rounded-xl border border-slate-200 bg-slate-50/70 p-3.5 text-slate-800 text-sm sm:text-base transition-all input-focus"></textarea>
+            </section>
+
+            <!-- السؤال 6 -->
+            <section class="question-card bg-white rounded-2xl p-5 sm:p-6 card-shadow border border-slate-100 transition-all hover:border-brand-teal/40">
+                <div class="flex items-start gap-3.5 mb-3">
+                    <span class="flex-shrink-0 w-8 h-8 sm:w-9 sm:h-9 rounded-xl brand-gradient text-white font-bold flex items-center justify-center text-sm sm:text-base shadow-sm">6</span>
+                    <div>
+                        <label for="q6" class="block text-base sm:text-lg font-bold text-brand-indigo leading-snug">
+                            وش الشي اللي يميّز مشروعك عن باقي المنافسين؟
+                        </label>
+                        <p class="text-xs sm:text-sm text-slate-500 mt-0.5">الجودة، السرعة، السعر، طريقة التقديم، فكرة جديدة...</p>
+                    </div>
+                </div>
+                <textarea id="q6" rows="2" placeholder="اكتب نقطة القوة أو الميزة التنافسية لمشروعك..." class="answer-input w-full rounded-xl border border-slate-200 bg-slate-50/70 p-3.5 text-slate-800 text-sm sm:text-base transition-all input-focus"></textarea>
+            </section>
+
+            <!-- السؤال 7 -->
+            <section class="question-card bg-white rounded-2xl p-5 sm:p-6 card-shadow border border-slate-100 transition-all hover:border-brand-teal/40">
+                <div class="flex items-start gap-3.5 mb-3">
+                    <span class="flex-shrink-0 w-8 h-8 sm:w-9 sm:h-9 rounded-xl brand-gradient text-white font-bold flex items-center justify-center text-sm sm:text-base shadow-sm">7</span>
+                    <div>
+                        <label for="q7" class="block text-base sm:text-lg font-bold text-brand-indigo leading-snug">
+                            في ألوان معينة تحبها وتبيها؟ وفي ألوان ما تبيها أبد؟
+                        </label>
+                        <p class="text-xs sm:text-sm text-slate-500 mt-0.5">وضح لنا الألوان المفضلة والألوان المستبعدة إن وجدت</p>
+                    </div>
+                </div>
+                <textarea id="q7" rows="2" placeholder="مثلاً: أفضل الكحلي والذهبي، وما أفضل اللون الأحمر أو الأصفر..." class="answer-input w-full rounded-xl border border-slate-200 bg-slate-50/70 p-3.5 text-slate-800 text-sm sm:text-base transition-all input-focus"></textarea>
+            </section>
+
+            <!-- السؤال 8 -->
+            <section class="question-card bg-white rounded-2xl p-5 sm:p-6 card-shadow border border-slate-100 transition-all hover:border-brand-teal/40">
+                <div class="flex items-start gap-3.5 mb-3">
+                    <span class="flex-shrink-0 w-8 h-8 sm:w-9 sm:h-9 rounded-xl brand-gradient text-white font-bold flex items-center justify-center text-sm sm:text-base shadow-sm">8</span>
+                    <div>
+                        <label for="q8" class="block text-base sm:text-lg font-bold text-brand-indigo leading-snug">
+                            أي نوع شعار يميل له ذوقك أكثر؟
+                        </label>
+                        <p class="text-xs sm:text-sm text-slate-500 mt-0.5">اختر النوع الأقرب لذوقك أو اكتب تفاصيل إضافية:</p>
+                    </div>
+                </div>
+                <!-- أزرار مساعدة سريعة لنوع الشعار -->
+                <div class="flex flex-wrap gap-2 mb-3 no-print">
+                    <button type="button" onclick="appendTag('q8', 'شعار نصي (اسم مكتوب بخط مميز فقط)')" class="text-xs sm:text-sm px-3 py-1.5 rounded-lg bg-brand-tealLight text-brand-indigo hover:bg-brand-teal hover:text-white transition font-medium">+ شعار نصي (خط مميز)</button>
+                    <button type="button" onclick="appendTag('q8', 'رمز / أيقونة مع الاسم')" class="text-xs sm:text-sm px-3 py-1.5 rounded-lg bg-brand-tealLight text-brand-indigo hover:bg-brand-teal hover:text-white transition font-medium">+ رمز مع الاسم</button>
+                    <button type="button" onclick="appendTag('q8', 'شعار حرفي (حرف مختصر مميز)')" class="text-xs sm:text-sm px-3 py-1.5 rounded-lg bg-brand-tealLight text-brand-indigo hover:bg-brand-teal hover:text-white transition font-medium">+ حرف مختصر</button>
+                    <button type="button" onclick="appendTag('q8', 'أترك الخيار الأنسب للمصمم')" class="text-xs sm:text-sm px-3 py-1.5 rounded-lg bg-brand-tealLight text-brand-indigo hover:bg-brand-teal hover:text-white transition font-medium">+ حسب رؤية المصمم</button>
+                </div>
+                <textarea id="q8" rows="2" placeholder="اكتب نوع الشعار المفضل لديك..." class="answer-input w-full rounded-xl border border-slate-200 bg-slate-50/70 p-3.5 text-slate-800 text-sm sm:text-base transition-all input-focus"></textarea>
+            </section>
+
+            <!-- السؤال 9 (مع ميزة إرفاق صورة أو أكثر) -->
+            <section class="question-card bg-white rounded-2xl p-5 sm:p-6 card-shadow border border-slate-100 transition-all hover:border-brand-teal/40">
+                <div class="flex items-start gap-3.5 mb-3">
+                    <span class="flex-shrink-0 w-8 h-8 sm:w-9 sm:h-9 rounded-xl brand-gradient text-white font-bold flex items-center justify-center text-sm sm:text-base shadow-sm">9</span>
+                    <div>
+                        <label for="q9" class="block text-base sm:text-lg font-bold text-brand-indigo leading-snug">
+                            عطني اسم مشروعين أو ثلاث تعجبك هويتهم
+                        </label>
+                        <p class="text-xs sm:text-sm text-slate-500 mt-0.5">مو شرط يكونون في نفس مجالك — وتقدر ترفق صور لشعارات أو هويات تعجبك من هنا</p>
+                    </div>
+                </div>
+                
+                <textarea id="q9" rows="2" placeholder="اكتب أسماء العلامات التجارية أو وصف الأسلوب اللي يعجبك..." class="answer-input w-full rounded-xl border border-slate-200 bg-slate-50/70 p-3.5 text-slate-800 text-sm sm:text-base transition-all input-focus mb-4"></textarea>
+
+                <!-- منطقة رفع الصور المتعددة للسؤال التاسع -->
+                <div class="brand-gradient-subtle rounded-2xl p-4 border border-dashed border-brand-teal/60">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 no-print">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-white text-brand-indigo flex items-center justify-center shadow-sm flex-shrink-0">
+                                <!-- أيقونة صورة SVG -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-sm font-bold text-brand-indigo">إرفاق صور مرجعية (اختياري)</p>
+                                <p class="text-xs text-slate-500">ارفق صورة أو أكثر لشعارات أو تصاميم أعجبتك</p>
+                            </div>
+                        </div>
+
+                        <label for="q9-images" class="cursor-pointer inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-brand-indigo hover:bg-brand-indigoDark text-white text-sm font-bold transition shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                            </svg>
+                            <span>اختيار صور</span>
+                        </label>
+                        <input id="q9-images" type="file" accept="image/*" multiple class="hidden" onchange="handleImageUpload(event)">
+                    </div>
+
+                    <!-- حاوية معاينة الصور المرفقة -->
+                    <div id="image-preview-container" class="hidden mt-4 pt-4 border-t border-brand-teal/20">
+                        <div class="flex items-center justify-between mb-2.5">
+                            <span id="images-count-label" class="text-xs font-bold text-brand-indigo">الصور المرفقة (0)</span>
+                            <button type="button" onclick="clearAllImages()" class="text-xs text-rose-600 hover:underline font-medium no-print">حذف الكل</button>
+                        </div>
+                        <div id="image-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+                            <!-- يتم إضافة البطاقات المصغرة للصور هنا تلقائياً -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- السؤال 10 -->
+            <section class="question-card bg-white rounded-2xl p-5 sm:p-6 card-shadow border border-slate-100 transition-all hover:border-brand-teal/40">
+                <div class="flex items-start gap-3.5 mb-3">
+                    <span class="flex-shrink-0 w-8 h-8 sm:w-9 sm:h-9 rounded-xl brand-gradient text-white font-bold flex items-center justify-center text-sm sm:text-base shadow-sm">10</span>
+                    <div>
+                        <label for="q10" class="block text-base sm:text-lg font-bold text-brand-indigo leading-snug">
+                            وين بتستخدم الشعار والهوية أكثر شي؟
+                        </label>
+                        <p class="text-xs sm:text-sm text-slate-500 mt-0.5">اختر أماكن الاستخدام الأساسية لمشروعك:</p>
+                    </div>
+                </div>
+                <!-- أزرار مساعدة سريعة لأماكن الاستخدام -->
+                <div class="flex flex-wrap gap-2 mb-3 no-print">
+                    <button type="button" onclick="appendTag('q10', 'حسابات التواصل الاجتماعي')" class="text-xs sm:text-sm px-3 py-1.5 rounded-lg bg-brand-tealLight text-brand-indigo hover:bg-brand-teal hover:text-white transition font-medium">+ سوشيال ميديا</button>
+                    <button type="button" onclick="appendTag('q10', 'علب وتغليف وأكياس')" class="text-xs sm:text-sm px-3 py-1.5 rounded-lg bg-brand-tealLight text-brand-indigo hover:bg-brand-teal hover:text-white transition font-medium">+ علب وتغليف</button>
+                    <button type="button" onclick="appendTag('q10', 'لوحة محل خارجية وداخلية')" class="text-xs sm:text-sm px-3 py-1.5 rounded-lg bg-brand-tealLight text-brand-indigo hover:bg-brand-teal hover:text-white transition font-medium">+ لوحة محل</button>
+                    <button type="button" onclick="appendTag('q10', 'موقع إلكتروني / تطبيق')" class="text-xs sm:text-sm px-3 py-1.5 rounded-lg bg-brand-tealLight text-brand-indigo hover:bg-brand-teal hover:text-white transition font-medium">+ موقع / تطبيق</button>
+                    <button type="button" onclick="appendTag('q10', 'مطبوعات ورقية وبزنس كارد')" class="text-xs sm:text-sm px-3 py-1.5 rounded-lg bg-brand-tealLight text-brand-indigo hover:bg-brand-teal hover:text-white transition font-medium">+ مطبوعات</button>
+                </div>
+                <textarea id="q10" rows="2" placeholder="اكتب أماكن الاستخدام أو أي ملاحظات إضافية حاب تضيفها..." class="answer-input w-full rounded-xl border border-slate-200 bg-slate-50/70 p-3.5 text-slate-800 text-sm sm:text-base transition-all input-focus"></textarea>
+            </section>
+
+        </form>
+
+        <!-- أزرار الإرسال والمشاركة والحفظ -->
+        <section class="mt-8 bg-white rounded-3xl p-6 sm:p-8 card-shadow border border-slate-100 no-print">
+            <div class="text-center mb-5">
+                <h2 class="text-lg sm:text-xl font-extrabold text-brand-indigo">جاهز لإرسال بيانات مشروعك؟</h2>
+                <p class="text-xs sm:text-sm text-slate-500 mt-1">اختر الطريقة الأنسب لك لإرسال الإجابات لنا مباشرة عبر واتساب أو إنستقرام</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                <!-- زر الإرسال المباشر لرقم الواتساب الخاص بالمصمم -->
+                <button type="button" onclick="sendToWhatsApp()" class="w-full py-3.5 px-5 rounded-2xl bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold text-base shadow-md hover:shadow-lg transition flex items-center justify-center gap-2.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+                        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.48l4.597-1.466A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.77 9.77 0 01-4.985-1.364l-.358-.213-3.706 1.182 1.202-3.611-.233-.371A9.773 9.773 0 012.182 12c0-5.414 4.404-9.818 9.818-9.818 5.414 0 9.818 4.404 9.818 9.818 0 5.414-4.404 9.818-9.818 9.818z"/>
+                    </svg>
+                    <span>إرسال مباشر عبر واتساب</span>
+                </button>
+
+                <!-- زر الإرسال عبر الإنستقرام (@lf.d) مع النسخ التلقائي -->
+                <button type="button" onclick="sendToInstagram()" class="w-full py-3.5 px-5 rounded-2xl bg-gradient-to-l from-[#833AB4] via-[#FD1D1D] to-[#F77737] hover:opacity-95 text-white font-bold text-base shadow-md hover:shadow-lg transition flex items-center justify-center gap-2.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                    <span dir="ltr">@lf.d</span>
+                    <span>إرسال عبر إنستقرام</span>
+                </button>
+            </div>
+
+            <!-- أزرار النسخ وحفظ PDF -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mt-3.5">
+                <!-- زر نسخ الإجابات للحافظة -->
+                <button type="button" onclick="copyResponses()" class="w-full py-3 px-5 rounded-2xl brand-gradient hover:opacity-95 text-white font-bold text-sm sm:text-base shadow-sm transition flex items-center justify-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                    </svg>
+                    <span>نسخ الإجابات منسقة</span>
+                </button>
+
+                <!-- زر حفظ كملف PDF شامل الصور -->
+                <button type="button" onclick="printOrSavePDF()" class="w-full py-3 px-5 rounded-2xl bg-slate-100 hover:bg-slate-200/80 text-brand-indigo font-bold text-sm sm:text-base transition flex items-center justify-center gap-2 border border-slate-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    <span>حفظ كملف PDF مع الصور</span>
+                </button>
+            </div>
+
+            <!-- زر حفظ كملف PDF شامل الصور -->
+            <div class="mt-3.5">
+                <button type="button" onclick="printOrSavePDF()" class="w-full py-3 px-5 rounded-2xl bg-slate-100 hover:bg-slate-200/80 text-brand-indigo font-bold text-sm sm:text-base transition flex items-center justify-center gap-2 border border-slate-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    <span>حفظ النموذج مع الصور كملف PDF</span>
+                </button>
+            </div>
+
+            <!-- تنبيه لطيف في حال وجود صور مرفقة -->
+            <p id="image-send-hint" class="hidden mt-3 text-center text-xs text-brand-teal font-bold bg-brand-tealLight py-2 px-3 rounded-xl">
+                💡 ملاحظة: لإرسال الصور المرفقة في السؤال 9 مع إجاباتك، يمكنك حفظ النموذج كملف PDF وإرساله في الواتساب أو إرسال الصور مباشرة في المحادثة.
+            </p>
+        </section>
+
+        <!-- رسالة الشكر في آخر الصفحة -->
+        <footer class="mt-8 mb-6 text-center bg-white rounded-3xl p-6 sm:p-8 card-shadow border border-slate-100">
+            <div class="w-12 h-12 rounded-2xl brand-gradient text-white flex items-center justify-center mx-auto mb-3.5 shadow-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+            </div>
+            <h3 class="text-lg sm:text-xl font-extrabold text-brand-indigo mb-2">
+                شكراً جزيلاً لثقتك في اختيارنا
+            </h3>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed max-w-xl mx-auto">
+                نقدّر في <strong class="text-brand-indigo font-bold">«فخامة للتصميم والجرافيك»</strong> ثقتك الغالية بنا للعمل على بناء هويتك التجارية.. ويسعدنا أن نكون شركاء نجاحك ونصنع معك علامة تترك أثراً لا يُنسى.
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-100 text-xs text-slate-400">
+                فخامة للتصميم والجرافيك • جميع الحقوق محفوظة
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- صندوق إشعارات منبثق (Toast) بدلاً من alert() -->
+    <div id="toast-box" class="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 transform transition-all duration-300 translate-y-20 opacity-0 pointer-events-none no-print">
+        <div class="bg-brand-indigo text-white px-5 py-3.5 rounded-2xl shadow-xl flex items-center gap-3 text-sm font-bold border border-white/10">
+            <span class="w-6 h-6 rounded-full bg-brand-teal flex items-center justify-center text-white flex-shrink-0">✓</span>
+            <span id="toast-message">تم نسخ الإجابات بنجاح!</span>
+        </div>
+    </div>
+
+    <!-- عنصر مخفي مخصص للنسخ الآمن عبر execCommand -->
+    <textarea id="clipboard-helper" class="fixed -top-96 left-0 opacity-0 pointer-events-none" aria-hidden="true"></textarea>
+
+    <script>
+        // مصفوفة لتخزين الصور المرفقة في السؤال التاسع
+        let uploadedImages = [];
+
+        // قائمة الأسئلة العشرة لصياغة الرسالة النهائية بدقة
+        const questionsList = [
+            { id: 'q1', title: '1. اسم المشروع واللغة المفضلة' },
+            { id: 'q2', title: '2. نشاط المشروع وما يقدمه' },
+            { id: 'q3', title: '3. الفئة المستهدفة' },
+            { id: 'q4', title: '4. الفكرة أو المعنى المطلوب في الشعار' },
+            { id: 'q5', title: '5. الانطباع والإحساس الأول المطلوب' },
+            { id: 'q6', title: '6. ما يميّز المشروع عن المنافسين' },
+            { id: 'q7', title: '7. الألوان المفضلة والألوان المستبعدة' },
+            { id: 'q8', title: '8. نوع الشعار المفضل' },
+            { id: 'q9', title: '9. أمثلة لهويات وعلامات تجارية ملهمة' },
+            { id: 'q10', title: '10. أماكن استخدام الشعار والهوية' }
+        ];
+
+        // تحديث شريط التقدم وحفظ المسودة تلقائياً في المتصفح
+        const answerInputs = document.querySelectorAll('.answer-input');
+        
+        function updateProgressAndSave() {
+            let answeredCount = 0;
+            const draftData = {};
+
+            answerInputs.forEach(input => {
+                const val = input.value.trim();
+                draftData[input.id] = input.value;
+                if (val.length > 0 || (input.id === 'q9' && uploadedImages.length > 0)) {
+                    answeredCount++;
+                }
+            });
+
+            // تحديث الشريط والنص
+            const percentage = Math.round((answeredCount / 10) * 100);
+            document.getElementById('progress-bar').style.width = percentage + '%';
+            document.getElementById('progress-text').textContent = `${answeredCount} من 10 أسئلة`;
+
+            // حفظ مسودة النصوص في localStorage حتى لا تضيع بيانات العميل بالخطأ
+            try {
+                localStorage.setItem('fakhama_brand_brief_draft', JSON.stringify(draftData));
+            } catch (e) {
+                // تجاهل في حال تقييد التخزين
+            }
+        }
+
+        // استعادة المسودة المحفوظة عند فتح الصفحة
+        window.addEventListener('DOMContentLoaded', () => {
+            try {
+                const saved = localStorage.getItem('fakhama_brand_brief_draft');
+                if (saved) {
+                    const draftData = JSON.parse(saved);
+                    Object.keys(draftData).forEach(key => {
+                        const el = document.getElementById(key);
+                        if (el && draftData[key]) {
+                            el.value = draftData[key];
+                        }
+                    });
+                }
+            } catch (e) {}
+            updateProgressAndSave();
+        });
+
+        answerInputs.forEach(input => {
+            input.addEventListener('input', updateProgressAndSave);
+        });
+
+        // دالة إضافة الخيارات السريعة لحقول الإجابة
+        function appendTag(inputId, tagText) {
+            const textarea = document.getElementById(inputId);
+            if (!textarea) return;
+            const currentVal = textarea.value.trim();
+            if (currentVal === '') {
+                textarea.value = tagText;
+            } else if (!currentVal.includes(tagText)) {
+                textarea.value = currentVal + '، ' + tagText;
+            }
+            textarea.focus();
+            updateProgressAndSave();
+        }
+
+        // دالة معالجة رفع الصور المتعددة للسؤال رقم 9
+        function handleImageUpload(event) {
+            const files = Array.from(event.target.files);
+            if (!files.length) return;
+
+            files.forEach(file => {
+                if (!file.type.startsWith('image/')) return;
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    uploadedImages.push({
+                        id: Date.now() + Math.random().toString(36).substr(2, 5),
+                        name: file.name,
+                        dataUrl: e.target.result
+                    });
+                    renderImagePreviews();
+                    updateProgressAndSave();
+                };
+                reader.readAsDataURL(file);
+            });
+
+            // إعادة تعيين الحقل للسماح برفع نفس الصورة مرة أخرى إذا حُذفت
+            event.target.value = '';
+        }
+
+        // عرض معاينة الصور المصغرة
+        function renderImagePreviews() {
+            const container = document.getElementById('image-preview-container');
+            const grid = document.getElementById('image-grid');
+            const countLabel = document.getElementById('images-count-label');
+            const sendHint = document.getElementById('image-send-hint');
+
+            if (uploadedImages.length === 0) {
+                container.classList.add('hidden');
+                sendHint.classList.add('hidden');
+                grid.innerHTML = '';
+                return;
+            }
+
+            container.classList.remove('hidden');
+            sendHint.classList.remove('hidden');
+            countLabel.textContent = `الصور المرفقة (${uploadedImages.length})`;
+
+            grid.innerHTML = uploadedImages.map(img => `
+                <div class="relative group rounded-xl overflow-hidden border border-slate-200 bg-white shadow-sm aspect-square">
+                    <img src="${img.dataUrl}" alt="${img.name}" class="w-full h-full object-cover">
+                    <button 
+                        type="button" 
+                        onclick="removeImage('${img.id}')" 
+                        title="حذف الصورة"
+                        class="no-print absolute top-1.5 left-1.5 w-7 h-7 rounded-lg bg-rose-600/90 hover:bg-rose-700 text-white flex items-center justify-center shadow transition"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            `).join('');
+        }
+
+        // حذف صورة محددة
+        function removeImage(id) {
+            uploadedImages = uploadedImages.filter(img => img.id !== id);
+            renderImagePreviews();
+            updateProgressAndSave();
+        }
+
+        // حذف جميع الصور
+        function clearAllImages() {
+            uploadedImages = [];
+            renderImagePreviews();
+            updateProgressAndSave();
+        }
+
+        // تجميع الإجابات في نص منسق وجاهز للواتساب
+        function buildFormattedText() {
+            let lines = [];
+            lines.push('*نموذج متطلبات تصميم الشعار والهوية التجارية*');
+            lines.push('*فخامة للتصميم والجرافيك* ✨');
+            lines.push('────────────────────');
+
+            questionsList.forEach(q => {
+                const val = document.getElementById(q.id).value.trim();
+                lines.push(`*${q.title}:*`);
+                lines.push(val ? val : '_لم يتم الإجابة_');
+                if (q.id === 'q9' && uploadedImages.length > 0) {
+                    lines.push(`📎 _(تم إرفاق عدد ${uploadedImages.length} صور مرجعية)_`);
+                }
+                lines.push('');
+            });
+
+            lines.push('────────────────────');
+            lines.push('تم تعبئة النموذج بكل اهتمام لإطلاق هوية مميزة.');
+            return lines.join('\n');
+        }
+
+        // إظهار رسالة إشعار أنيقة (Toast)
+        let toastTimeout;
+        function showToast(message) {
+            const box = document.getElementById('toast-box');
+            const msgEl = document.getElementById('toast-message');
+            msgEl.textContent = message;
+            
+            box.classList.remove('translate-y-20', 'opacity-0');
+            box.classList.add('translate-y-0', 'opacity-100');
+
+            clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => {
+                box.classList.add('translate-y-20', 'opacity-0');
+                box.classList.remove('translate-y-0', 'opacity-100');
+            }, 3500);
+        }
+        // فتح واتساب مباشرة على رقم المصمم بالنص المنسق
+        function sendToWhatsApp() {
+            const formattedText = buildFormattedText();
+            // نسخ النص احتياطياً أيضاً
+            const helper = document.getElementById('clipboard-helper');
+            helper.value = formattedText;
+            helper.select();
+            helper.setSelectionRange(0, 99999);
+            try { document.execCommand('copy'); } catch (e) {}
+
+            const designerWhatsApp = '966507001942';
+            const encodedText = encodeURIComponent(formattedText);
+            const whatsappUrl = `https://wa.me/${designerWhatsApp}?text=${encodedText}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // نسخ النص تلقائياً وفتح حساب المصمم على إنستقرام (@lf.d)
+        function sendToInstagram() {
+            const formattedText = buildFormattedText();
+            const helper = document.getElementById('clipboard-helper');
+            helper.value = formattedText;
+            helper.select();
+            helper.setSelectionRange(0, 99999);
+            try { document.execCommand('copy'); } catch (e) {}
+
+            showToast('تم نسخ إجاباتك تلقائياً! الصقها في رسائل حسابنا @lf.d على إنستقرام');
+            setTimeout(() => {
+                window.open('https://instagram.com/lf.d', '_blank');
+            }, 900);
+        }
+
+        // طباعة الصفحة أو حفظها كملف PDF متضمناً الصور المرفقة
+        function printOrSavePDF() {
+            showToast('جاري تجهيز النموذج والصور لحفظه كملف PDF...');
+            setTimeout(() => {
+                window.print();
+            }, 400);
+        }
+    </script>
+</body>
+</html>
